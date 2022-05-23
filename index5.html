@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+  </body>
+
+  <script>
+    let num1 = parseInt(prompt("Enter a number:"));
+    let num2 = parseInt(prompt("Enter another number:"));
+
+    let sum = Number(num1) + Number(num2);
+    let minus = num1 - num2;
+    let multiply = num1 * num2;
+    let divide = num1 / num2;
+    let modulus = num1 % num2;
+
+    document.write(
+      "The Sum of " + num1 + " and " + num2 + " is " + sum + "<br>"
+    );
+    document.write(
+      "The Subtraction of " + num1 + " and " + num2 + " is " + minus + "<br>"
+    );
+    document.write(
+      "The Multiplication of " +
+        num1 +
+        " and " +
+        num2 +
+        " is " +
+        multiply +
+        "<br>"
+    );
+    document.write(
+      "The Division of " + num1 + " and " + num2 + " is " + divide + "<br>"
+    );
+    document.write(
+      "The Modulus of " +
+        num1 +
+        " and " +
+        num2 +
+        " is " +
+        modulus +
+        "<br><br><br>"
+    );
+
+    let randomVariable = parseInt(prompt("Initialize the variable:"));
+    let s7 = randomVariable + 7;
+
+    document.write(
+      "Value after variable declaration is: " + randomVariable + "<br>"
+    );
+
+    document.write("Value after increment is : " + ++randomVariable + "<br>");
+    randomVariable--;
+    document.write("Value after decrement is : " + --randomVariable + "<br>");
+    randomVariable++;
+
+    document.write("After adding 7 value is : " + s7 + "<br>");
+    document.write("After adding 7 value and decrementing : " + --s7 + "<br>");
+
+    let e3 = randomVariable % 3;
+    document.write(
+      "Remainder after dividing the variable’s value by 3 : " + e3 + "<br>"
+    );
+
+    let ticket = 4;
+    let ticktetPrice = ticket * 600;
+    document.write(
+      "The total amount to buy " +
+        ticket +
+        " tickets to a movie is " +
+        ticktetPrice +
+        "PKR."
+    );
+  </script>
+</html>
